@@ -84,16 +84,28 @@
 						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="https://formspree.io/f/xbjwqjbz">
+								<!-- <form method="post" action="https://formspree.io/f/xbjwqjbz">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
+								</form> -->
+								<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+								  <fieldset id="fs-frm-inputs">
+								    <label for="full-name">Full Name</label>
+								    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+								    <label for="email-address">Email Address</label>
+								    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+								    <label for="message">Message</label>
+								    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+								    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+								  </fieldset>
+								  <input type="submit" value="Submit">
 								</form>
-								<ul class="actions">
+									<!-- <ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+								</ul> -->
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
